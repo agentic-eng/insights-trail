@@ -1,7 +1,7 @@
 # Agentic AI — Daily Briefing
 **Date:** 2026-04-05
 **Query type:** GENERAL
-**Sources:** X/Twitter, Hacker News, Web
+**Sources:** X/Twitter, Hacker News, Web (supplemented with 6 additional WebSearch passes)
 
 ---
 
@@ -9,9 +9,9 @@
 
 | Source | Items | Engagement | Notes |
 |--------|-------|------------|-------|
-| X/Twitter | 22 posts | 30 likes, 4 reposts | Focused on Claude Code, HITL, agent payments |
-| Hacker News | 26 stories | 356 points, 186 comments | Strong signal; top story: Nvidia Vera CPU (179pts) |
-| Web | 40 pages | — | via WebSearch; 4 queries across MCP, frameworks, deployments |
+| X/Twitter | 31 posts | ~59 likes, 4 reposts | Focused on Claude Code, HITL, agent payments, hardware |
+| Hacker News | 26 stories | 356+ points, 186+ comments | Strong signal; top story: Nvidia Vera CPU (179pts/101cmt) |
+| Web | ~60 pages | — | via WebSearch; 6 supplementary queries across MCP, frameworks, Anthropic, hardware, SDK, research |
 
 ---
 
@@ -29,6 +29,16 @@ Anthropic's newly released advanced tool use features (all now GA) are accelerat
 
 ---
 
+### 1b. MCP Protocol: From Niche to Neutral Infrastructure
+
+The Model Context Protocol has undergone a governance shift that cements its position as an industry standard: in December 2025, Anthropic donated MCP to the Agentic AI Foundation (AAIF), a directed fund under the Linux Foundation, co-founded by Anthropic, Block, and OpenAI. On X, @mx_lens covered the Coinbase+Linux Foundation angle directly: "They are removing corporate ownership to create a true neutral ground for agentic AI development." By early 2026, the MCP ecosystem has exploded to 10,000+ active servers — a 10x increase year-over-year — covering GitHub, Slack, Google Drive, PostgreSQL, Notion, Jira, Salesforce and hundreds more. Claude Code, Cursor, Windsurf, and Zed all support MCP natively. A key recent Claude Code update: Tool Search now defers tool definitions until Claude needs them, keeping MCP context usage minimal regardless of how many servers are configured.
+
+Full docs: [code.claude.com](https://code.claude.com/docs/en/mcp) | Wikipedia: [Model Context Protocol](https://en.wikipedia.org/wiki/Model_Context_Protocol) | Deep guide: [LumiChats MCP 2026](https://lumichats.com/blog/model-context-protocol-mcp-complete-guide-2026)
+
+**Platforms:** X, Web
+
+---
+
 ### 2. Multi-Agent Orchestration Frameworks: LangGraph, CrewAI, AutoGen
 
 The framework horse-race continues but is consolidating around use cases. Per [DataCamp](https://www.datacamp.com/tutorial/crewai-vs-langgraph-vs-autogen) and multiple framework comparison guides:
@@ -40,6 +50,20 @@ The framework horse-race continues but is consolidating around use cases. Per [D
 The meta-trend: 86% of copilot spending ($7.2B) now flows to agent-based systems per [adopt.ai](https://www.adopt.ai/blog/multi-agent-frameworks). Hybrid approaches dominate real production systems — combining LangGraph's control plane with CrewAI's role definitions or AutoGen's conversation patterns. The [o-mega.ai top-10 agent frameworks guide](https://o-mega.ai/articles/langgraph-vs-crewai-vs-autogen-top-10-agent-frameworks-2026) and [OpenAgents comparison](https://openagents.org/blog/posts/2026-02-23-open-source-ai-agent-frameworks-compared) provide deeper breakdowns including Agno and other contenders.
 
 **Platforms:** Web
+
+---
+
+### 2b. Agent SDK Race: Claude Agent SDK vs OpenAI Agents SDK vs Google ADK
+
+Three major agent SDKs are now competing for the production stack. Per [Composio's comparison](https://composio.dev/content/claude-agents-sdk-vs-openai-agents-sdk-vs-google-adk) and [Agentlas analysis](https://agentlas.pro/compare/claude-agent-sdk-vs-openai-agents-sdk/):
+
+- **Claude Agent SDK** (Anthropic): Derived directly from Claude Code. Ships with 8 built-in tools (Read, Write, Edit, Bash, Glob, Grep, WebSearch, WebFetch) — agents can act on files, run commands, and search the web out of the box. Best for "give the agent a computer" paradigms with deep OS access.
+- **OpenAI Agents SDK**: Evolved from Swarm. Excels at multimodal/voice (GPT-4o Realtime API) and allows easy LLM swapping. Best for lightweight, voice-enabled, multi-LLM pipelines.
+- **Google ADK**: Less covered in the data but noted as the third major entrant.
+
+The agentic coding race itself became a meme when [TechCrunch reported](https://techcrunch.com/2026/02/05/openai-launches-new-agentic-coding-model-only-minutes-after-anthropic-drops-its-own/) that OpenAI launched a new agentic coding model "only minutes after Anthropic drops its own" on February 5, 2026. Also notable: Xcode 26.3 added native support for agentic coding agents including Claude, and [Cursor 3](https://siliconangle.com/2026/04/02/cursor-refreshes-vibe-coding-platform-focus-ai-agents/) shipped a refreshed platform with natural-language agent task specification. Medium post by @hugolu87: [How to run Claude Agents in Production using the Claude SDK](https://medium.com/@hugolu87/how-to-run-claude-agents-in-production-using-the-claude-sdk-756f9d3c93d8).
+
+**Platforms:** Web, X
 
 ---
 
@@ -85,7 +109,23 @@ UiPath made two major agentic announcements in late March 2026, covered by @Mont
 
 ---
 
-### 8. Agentic Payments & Infrastructure Primitives
+### 8. Anthropic's Agent Platform: Cowork, Dispatch, and Computer Use
+
+Per [CNBC (2026-03-24)](https://www.cnbc.com/2026/03/24/anthropic-claude-ai-agent-use-computer-finish-tasks.html) and [tech-insider.org](https://tech-insider.org/anthropic-claude-computer-use-agent-2026/), Anthropic's Claude can now take over a user's computer to complete tasks autonomously: open apps, navigate browsers, fill spreadsheets. The Cowork+Dispatch features (Pro/Max plans) create a persistent agent thread that continues working while the user steps away — an "AI coworker" model. Claude Opus 4.6 is described as the "most intelligent model for complex agentic tasks and long-horizon work." All Claude Code models were upgraded to 1M-token context windows; GPT-5.4 from OpenAI made the same upgrade. VentureBeat reported Anthropic cut off [OpenClaw and third-party agents](https://venturebeat.com/technology/anthropic-cuts-off-the-ability-to-use-claude-subscriptions-with-openclaw-and) from using Claude subscriptions — a policy move that generated significant developer community reaction.
+
+**Platforms:** Web, X
+
+---
+
+### 8c. The Intelligence Explosion Paper: Science Publishes the Thesis
+
+A paper titled **"Agentic AI and the Next Intelligence Explosion"** (arxiv: [2603.20639](https://arxiv.org/abs/2603.20639)) was published in *Science* by researchers from Google, University of Chicago, and Santa Fe Institute. The core thesis: the next intelligence explosion will not be a single silicon brain but "a complex, combinatorial society specializing and sprawling like a city." Evidence cited: frontier reasoning models like DeepSeek-R1 and QwQ-32B spontaneously simulate multi-agent interactions within their chain-of-thought — a "society of thought" — when rewarded solely for reasoning accuracy. HN reaction was split: "Too poorly written to take seriously" vs. a practitioner who confirmed "this is actually bang on a direction we've been working on for the past year — scaling many specialized agents together with RL instead of just scaling one big model." Also relevant: [arxiv 2508.07407](https://arxiv.org/abs/2508.07407) surveys the emerging field of "self-evolving AI agents" that adapt from interaction data — bridging foundation model capabilities with lifelong learning.
+
+**Platforms:** HN, Web
+
+---
+
+### 8b. Agentic Payments & Infrastructure Primitives
 
 Emerging on X: @beledgerless raised the question "What defines a better rail for agentic payments?" — a nascent but growing discussion about the infrastructure layer agents need to transact autonomously. @aiagentswork went further, predicting that open-source models running on consumer hardware (Mac mini) will handle "99% of agentic tasks" within 12 months, eliminating the need for API subscriptions. These represent early-stage debates around the economic layer of agentic AI deployment.
 
@@ -115,6 +155,16 @@ Nvidia Vera (HN #1) and Alibaba XuanTie C950 (HN) both appeared in the same 30-d
 - X: https://x.com/krishnadotdev/status/2040693321593700387
 - HN: https://news.ycombinator.com/item?id=47525283
 
+**5. MCP as neutral infrastructure (X + Web)**
+@mx_lens on X called out the Coinbase + Linux Foundation governance move. Web confirms: MCP donated to Linux Foundation AAIF (Dec 2025), 10,000+ servers, supported natively by Claude Code/Cursor/Windsurf/Zed.
+- X: https://x.com/mx_lens/status/2039884437639324014
+- Web: https://www.anthropic.com/news/model-context-protocol, https://en.wikipedia.org/wiki/Model_Context_Protocol
+
+**6. Hardware arms race for agentic inference (HN + X)**
+Nvidia Vera (HN #1, 179pts), Alibaba XuanTie C950 (HN), plus X posts from @diegomichelato_ and @ZaStocks framing AMD EPYC as the CPU-inference play for serving millions of parallel agent steps.
+- HN: https://news.ycombinator.com/item?id=47404074
+- X: https://x.com/diegomichelato_/status/2040877848752443471, https://x.com/ZaStocks/status/2040872555955818948
+
 ---
 
 ## Per-Platform Tables
@@ -136,6 +186,16 @@ Nvidia Vera (HN #1) and Alibaba XuanTie C950 (HN) both appeared in the same 30-d
 | @chris_salako | "Simplifying complex web tasks with new agentic AI capabilities." | — | — | https://x.com/chris_salako/status/2040695746916233602 |
 | @KamStaszewski | "@badlogicgames my AI agentic framework solves this..." | — | — | https://x.com/KamStaszewski/status/2040698044526534940 |
 | @ISUW_India | "Master Class at #ISUW2026: Agentic AI – How to Build and Deploy AI Agents" | — | — | https://x.com/ISUW_India/status/2040694013485806033 |
+| @ZaStocks | "$AMD — CPU shortage + Agentic AI could be the narrative this needed for continuation. Note the high flag since the OpenAI deal." | 58 | 4 | https://x.com/ZaStocks/status/2040872555955818948 |
+| @TradeMasteryHQ | "Agentic AI inference is where AMD's EPYC chips actually have a shot — serving millions of autonomous agents is a CPU-heavy workload." | — | — | https://x.com/TradeMasteryHQ/status/2040871634236526758 |
+| @diegomichelato_ | "Q1 2026 produced more agentic AI progress than all of 2024. Multi-agent systems went from research papers to production infrastructure in 90 days." | — | — | https://x.com/diegomichelato_/status/2040877848752443471 |
+| @diegomichelato_ | "Every planning step, tool call, and memory retrieval is a CPU bound operation. The real bottleneck in production agentic systems is CPU throughput and latency." | — | — | https://x.com/diegomichelato_/status/2040880476483629065 |
+| @AIwithImran | "Agentic AI isn't the next pillar. It's what makes all the others matter. Generate, reason, retrieve, act — none of it changes the world sitting in a chat box." | — | — | https://x.com/AIwithImran/status/2040878311547572555 |
+| @manualitica | "Being an agentic AI consultant is in high demand, yes. But this role will not be here for long." | 1 | — | https://x.com/manualitica/status/2040872904829665346 |
+| @THE_TOWOBOLA | "Claude Code is already out here paying its own bills. The future of finance isn't a better banking app; it's an AI agent that handles everything." | — | — | https://x.com/THE_TOWOBOLA/status/2040869507720155154 |
+| @mirkovukusic | "I draw a clear line between 'vibe coding' and 'agentic engineering'. Skill and knowledge still matter — a lot." | — | — | https://x.com/mirkovukusic/status/2040880666083016829 |
+| @mx_lens | "Coinbase and the Linux Foundation are removing corporate ownership to create a true neutral ground for agentic AI development." | — | — | https://x.com/mx_lens/status/2039884437639324014 |
+| @frizadiga | "Compounding context is the key for our agentic AI workflow to actually learn — data & mistakes that matter to its own objective." | — | — | https://x.com/frizadiga/status/2040880543987077183 |
 
 **Hacker News:**
 | User | Title | Points | Comments | Notable Quote | URL |
@@ -199,28 +259,60 @@ Nvidia Vera (HN #1) and Alibaba XuanTie C950 (HN) both appeared in the same 30-d
 | Machine Learning Mastery | https://machinelearningmastery.com/the-roadmap-for-mastering-agentic-ai-in-2026/ | Roadmap for mastering agentic AI |
 | DevOps.com | https://devops.com/how-ai-agents-are-reshaping-the-developer-experience-2/ | AI agents reshaping developer experience |
 | Mayfield VC | https://www.mayfield.com/the-agentic-enterprise-in-2026/ | The agentic enterprise in 2026 |
+| Code With Andrea | https://codewithandrea.com/newsletter/march-2026/ | March 2026: GPT-5.4, agentic workflows, AI orchestration |
+| Apple Newsroom | https://www.apple.com/newsroom/2026/02/xcode-26-point-3-unlocks-the-power-of-agentic-coding/ | Xcode 26.3 unlocks agentic coding (Claude + Codex integration) |
+| AI Agent Store | https://aiagentstore.ai/ai-agent-news/this-week | Daily AI agent news aggregator |
+| Defense One | https://www.defenseone.com/technology/2026/04/startup-takes-different-approach-ai-assistants/412545/ | Agentic AI assistant for defense/warfare |
+| Siemens | https://news.siemens.com/en-us/questa-one-agentic-ai-toolkit/ | Questa One Agentic AI Toolkit for IC design/verification |
+| SiliconANGLE | https://siliconangle.com/2026/04/02/cursor-refreshes-vibe-coding-platform-focus-ai-agents/ | Cursor 3 refreshes vibe coding platform with AI agent focus |
+| NVIDIA Newsroom | https://nvidianews.nvidia.com/news/ai-agents | NVIDIA Open Agent Development Platform announcement |
+| The New Stack | https://thenewstack.io/jetbrains-central-ai-agents/ | JetBrains: AI agents about to repeat cloud ROI crisis |
+| TechCrunch | https://techcrunch.com/2026/02/05/openai-launches-new-agentic-coding-model-only-minutes-after-anthropic-drops-its-own/ | OpenAI launches coding model minutes after Anthropic (Feb 2026) |
+| Google Cloud | https://cloud.google.com/resources/content/ai-agent-trends-2026 | AI agent trends 2026 report |
+| Anthropic | https://www.anthropic.com/news/model-context-protocol | Introducing the Model Context Protocol |
+| Wikipedia | https://en.wikipedia.org/wiki/Model_Context_Protocol | Model Context Protocol reference |
+| LumiChats | https://lumichats.com/blog/model-context-protocol-mcp-complete-guide-2026 | MCP 2026 complete guide |
+| Stormy AI | https://stormy.ai/blog/cmo-guide-skill-engineering-claude-code-mcp-2026 | CMO guide: skill engineering via Claude Code + MCP |
+| Composio | https://composio.dev/content/claude-agents-sdk-vs-openai-agents-sdk-vs-google-adk | Claude Agent SDK vs OpenAI Agents SDK vs Google ADK |
+| Claude Platform Docs | https://platform.claude.com/docs/en/agent-sdk/overview | Claude Agent SDK overview |
+| DEV Community | https://dev.to/composiodev/best-agents-sdk-in-2026-7gg | Best Agent SDKs in 2026 |
+| Agentlas | https://agentlas.pro/compare/claude-agent-sdk-vs-openai-agents-sdk/ | Claude Agent SDK vs OpenAI Agents SDK deep comparison |
+| Medium / Hugo Lu | https://medium.com/@hugolu87/how-to-run-claude-agents-in-production-using-the-claude-sdk-756f9d3c93d8 | Running Claude Agents in production with the SDK |
+| Medium / Shivansh Gupta | https://medium.com/@shivanshmay2019/claude-agent-sdk-deep-dive-what-it-means-to-use-claude-code-as-a-library-773aea121787 | Claude Agent SDK deep dive |
+| CNBC | https://www.cnbc.com/2026/03/24/anthropic-claude-ai-agent-use-computer-finish-tasks.html | Anthropic Claude now uses your computer to finish tasks |
+| VentureBeat | https://venturebeat.com/technology/anthropic-cuts-off-the-ability-to-use-claude-subscriptions-with-openclaw-and | Anthropic cuts off OpenClaw/third-party agent subscriptions |
+| Tech Insider | https://tech-insider.org/anthropic-claude-computer-use-agent-2026/ | Claude Computer Use Agent 2026 guide |
+| Science (journal) | https://www.science.org/doi/10.1126/science.aeg1895 | "Agentic AI and the Next Intelligence Explosion" paper |
+| arXiv | https://arxiv.org/abs/2603.20639 | arXiv preprint: Agentic AI + intelligence explosion |
+| arXiv | https://arxiv.org/abs/2508.07407 | Self-Evolving AI Agents survey |
+| IBM | https://www.ibm.com/think/news/ai-tech-trends-predictions-2026 | IBM AI & tech trends 2026 |
+| Blue Prism | https://www.blueprism.com/resources/blog/future-ai-agents-trends/ | Future of AI agents: top trends |
+| HuggingFace Papers | https://huggingface.co/papers/2603.20639 | Intelligence explosion paper on HuggingFace |
+| Langfuse | https://langfuse.com/blog/2025-03-19-ai-agent-comparison | Comparing open-source AI agent frameworks |
 
 ---
 
 ## Stats Block
 
 ```
-├─ 🔵 X: 22 posts │ 30 likes │ 4 reposts
-├─ 🟢 HN: 26 stories │ 356 points │ 186 comments
-├─ 🌐 Web: 40 pages — DataCamp, Anthropic, CIO, Deloitte, Winbuzzer, DEV Community, Mayfield
-└─ 🗣️ Top voices: @getvibecodes, @krishnadotdev, @MonteMensa │ hn/lewismenelaws, hn/speckx
+├─ 🔵 X: 31 posts │ ~59 likes │ 4 reposts
+├─ 🟢 HN: 26 stories │ 356+ points │ 186+ comments
+├─ 🌐 Web: ~60 pages — TechCrunch, CNBC, Anthropic, DataCamp, VentureBeat, CIO, Deloitte, Science journal, IBM, Composio
+└─ 🗣️ Top voices: @getvibecodes, @diegomichelato_, @ZaStocks, @krishnadotdev │ hn/lewismenelaws, hn/speckx
 ```
 
 ---
 
 ## Data Gaps
 
-- **Reddit: 0 threads** — ScrapeCreators API returned HTTP 402 (Payment Required). Reddit data is entirely absent from this briefing; this is a significant gap given Reddit's typical depth of discussion on agentic AI topics (r/LocalLLaMA, r/artificial, r/MachineLearning).
-- **YouTube: 0 videos** — yt-dlp returned 0 results for the query "agentic-ai". The search term may be too hyphenated/specific; broader terms like "agentic coding" or "Claude Code tutorial" would likely surface content.
+- **Reddit: 0 threads** — ScrapeCreators API returned HTTP 402 (Payment Required). Reddit data is entirely absent from this briefing; this is a significant gap given Reddit's typical depth of discussion on agentic AI topics (r/LocalLLaMA, r/artificial, r/MachineLearning, r/ClaudeAI, r/LangChain).
+- **YouTube: 0 videos** — yt-dlp returned 0 results for the query "agentic-ai". The hyphenated search term is too specific; broader queries like "Claude Code tutorial 2026" or "agentic coding agent" would likely surface rich transcript content.
 - **TikTok/Instagram: 0 results** — Neither platform returned results despite being configured. Likely a platform availability or API issue this cycle.
-- **Polymarket: no markets surfaced** — No prediction markets for agentic AI topics appeared in results.
-- **Coverage estimate:** ~55% — strong HN and X signals, solid web supplementation, but Reddit (the highest-signal community discussion source) was unavailable.
-- **X engagement data:** Most X posts showed score values but raw likes/retweet counts were sparse in the output. The 30 likes / 4 reposts total likely undercounts actual engagement.
+- **Bluesky: HTTP 403 Forbidden** — Credentials may need refreshing.
+- **Polymarket: no markets surfaced** — No prediction markets for agentic AI topics appeared in results. Relevant markets may exist (e.g., "Will Claude be #1 coding model by EOY 2026") but weren't captured.
+- **script patch required** — The last30days v3.0 script had a NoneType bug on INCLUDE_SOURCES config key; patched at runtime for this run (fix: `(config.get('INCLUDE_SOURCES', '') or '').split(',')`).
+- **Coverage estimate:** ~55% — strong HN and X signals, extensive web supplementation across 6 query batches, but Reddit (the highest-signal community source) and YouTube were unavailable. The 6 supplementary WebSearch passes significantly compensate for missing platform data.
+- **X engagement data:** Most X posts showed score values only; raw likes/RT counts were sparse. The ~59 likes / 4 reposts is a floor, not a ceiling.
 
 ---
 
