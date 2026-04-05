@@ -11,7 +11,7 @@
 |--------|-------|------------|-------|
 | X/Twitter | 29 posts | 7 likes, 1 repost | Compact output shows 15; top post 4 likes @domini_code |
 | Hacker News | 22 stories | ~160 pts, ~60 comments | Compact output shows 15; top story 36 pts hn/4ppsec |
-| Web | 30 pages | — | via WebSearch; 3 queries |
+| Web | 64 pages | — | via WebSearch; 8 queries total |
 
 ---
 
@@ -273,6 +273,42 @@ Official documentation: [code.claude.com/docs/en/discover-plugins](https://code.
 | CodeSignal | https://codesignal.com/learn/courses/customizing-claude-code-for-reusable-visualization-workflows/lessons/modular-visualization-skills | Visualization skills course |
 | DevOps.com | https://devops.com/claude-introduces-agent-skills-for-custom-ai-workflows/ | Agent skills for custom workflows |
 | Medium — PM skills | https://medium.com/product-powerhouse/33-claude-skills-for-pms-are-now-in-the-claude-code-marketplace-heres-how-to-install-them-7968ab6bb1e1 | 33 PM skills in Claude Code marketplace |
+| Claude Code Docs — Plugins | https://code.claude.com/docs/en/plugins | Official plugin creation docs |
+| quemsah/awesome-claude-plugins | https://github.com/quemsah/awesome-claude-plugins | Automated plugin adoption metrics via n8n |
+| Composio — Top Plugins | https://composio.dev/content/top-claude-code-plugins | 10 top Claude Code plugins 2026 |
+| UX Planet | https://uxplanet.org/top-7-claude-code-plugins-2f97c2fbb1be | Top 7 Claude Code Plugins (Mar 2026) |
+| Anthropic/claude-code plugins README | https://github.com/anthropics/claude-code/blob/main/plugins/README.md | Official plugins README |
+| MCP Market | https://mcpmarket.com/ | MCP server discovery directory |
+| Builder.io | https://www.builder.io/blog/best-mcp-servers-2026 | Best MCP Servers for Developers 2026 |
+| DEV Community — MCP Servers | https://dev.to/jangwook_kim_e31e7291ad98/top-15-mcp-servers-every-developer-should-install-in-2026-n1h | Top 15 MCP Servers to Install in 2026 |
+| AgentPatch | https://agentpatch.ai/blog/best-mcp-servers-2026/ | Best MCP Servers: Tools Every AI Agent Needs |
+| ByteBridge / Medium | https://bytebridge.medium.com/mcp-gateways-in-2026-top-10-tools-for-ai-agents-and-workflows-d98f54c3577a | MCP Gateways 2026: Top 10 Tools |
+| Composio — Hosted MCP | https://composio.dev/content/hosted-mcp-platforms | 4 best hosted MCP platforms 2026 |
+| Firecrawl | https://www.firecrawl.dev/blog/best-mcp-servers-for-developers | 10 Best MCP Servers for Developers |
+| StackGen | https://stackgen.com/blog/the-10-best-mcp-servers-for-platform-engineers-in-2026 | Best MCP Servers for Platform Engineers |
+| Databar | https://databar.ai/blog/article/best-mcp-servers-for-sales-teams-in-2026 | Best MCP Servers for Sales Teams |
+| KDnuggets | https://www.kdnuggets.com/top-5-agent-skill-marketplaces-for-building-powerful-ai-agents | Top 5 Agent Skill Marketplaces |
+| Paperclipped | https://www.paperclipped.de/en/blog/ai-agent-skills-marketplace/ | AI Agent Skills Marketplace: The New Plugin Ecosystem |
+| SkillsLLM | https://skillsllm.com | AI Skills Marketplace |
+| LobeHub Skills | https://lobehub.com/skills | Agent Skills Marketplace (169,739 skills) |
+| agentskills.io | https://agentskills.io/home | 110,000+ skills across 20+ AI tools |
+| ProductTalk | https://www.producttalk.org/how-to-use-claude-code-features/ | Guide to Slash Commands, Agents, Skills, Plug-ins |
+| Claude API Docs — Slash Commands | https://platform.claude.com/docs/en/agent-sdk/slash-commands | Slash Commands in the SDK |
+| DEV — Advanced Claude Code | https://dev.to/jangwook_kim_e31e7291ad98/claude-code-advanced-workflow-subagents-commands-multi-session-50hl | Advanced Workflow: Subagents, Commands & Multi-Session |
+| alexop.dev | https://alexop.dev/posts/claude-code-customization-guide-claudemd-skills-subagents/ | CLAUDE.md, Slash Commands, Skills, and Subagents |
+| claudefa.st — Custom Agents | https://claudefa.st/blog/guide/agents/custom-agents | Build Your Own AI Agents with Claude Code |
+| sshh.io | https://blog.sshh.io/p/how-i-use-every-claude-code-feature | How I Use Every Claude Code Feature |
+| wshobson/commands | https://github.com/wshobson/commands | 57 production-ready slash commands (15 workflows + 42 tools) |
+| claudefa.st — Config | https://claudefa.st/blog/guide/configuration-basics | 3 Claude Code Config Files |
+| MCP Registry | https://registry.modelcontextprotocol.io/ | Official MCP Registry (launched Sept 2025) |
+| MCP Roadmap | https://modelcontextprotocol.io/development/roadmap | MCP Roadmap (updated March 5, 2026) |
+| modelcontextprotocol/registry | https://github.com/modelcontextprotocol/registry | Community-driven MCP registry service |
+| modelcontextprotocol.info — Registry | https://modelcontextprotocol.info/tools/registry/ | MCP Registry reference |
+| modelcontextprotocol.info — Next Release | https://modelcontextprotocol.info/blog/mcp-next-version-update/ | Update on Next MCP Protocol Release |
+| Parser Digital | https://parserdigital.com/2026/01/27/understanding-mcp-the-model-context-protocol-for-secure-extensible-ai-systems/ | Understanding MCP: Secure, Extensible AI Systems |
+| MCP Blog — Registry Preview | https://blog.modelcontextprotocol.io/posts/2025-09-08-mcp-registry-preview/ | Introducing the MCP Registry (Sept 2025) |
+| Wikipedia | https://en.wikipedia.org/wiki/Model_Context_Protocol | Model Context Protocol overview |
+| Microsoft Learn — Windows MCP | https://learn.microsoft.com/en-us/windows/ai/mcp/overview | MCP on Windows + Windows ODR |
 
 ---
 
@@ -281,7 +317,7 @@ Official documentation: [code.claude.com/docs/en/discover-plugins](https://code.
 ```
 ├─ 🔵 X: 29 posts │ 7 likes │ 1 repost
 ├─ 🟢 HN: 22 stories │ ~160 points │ ~60 comments
-├─ 🌐 Web: 30 pages — claudemarketplaces.com, skillsmp.com, JFrog, InfoQ, Qualys, Linux Foundation, MindStudio, Spring.io, DEV Community, Calmops
+├─ 🌐 Web: 64 pages — claudemarketplaces.com, skillsmp.com, JFrog, InfoQ, Qualys, Linux Foundation, MindStudio, Spring.io, DEV Community, Calmops, Builder.io, MCP Registry, KDnuggets, LobeHub, StackGen, Firecrawl, Vercel, Paperclipped
 └─ 🗣️ Top voices: @domini_code (4 likes), @PixelFamiliar, @Kushagrat15 │ hn/4ppsec (36 pts), hn/samber (32 pts)
 ```
 

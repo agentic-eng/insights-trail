@@ -247,3 +247,99 @@ Key facts:
 - AgentSkillOS: 90,000+ publicly available skills via retrieval and orchestration on GitHub
 - Spring AI adopted the SKILL.md pattern for modular, reusable agent capabilities in the Java ecosystem
 - OpenAI Codex uses same SKILL.md format (cross-agent interoperability confirmed at docs level)
+
+---
+
+## Supplementary WebSearch Results (2026-04-05, this session)
+
+### Query A: "Claude Code skills plugins extensions 2026"
+
+Sources:
+- https://code.claude.com/docs/en/plugins — Official Claude Code plugin creation docs
+- https://github.com/quemsah/awesome-claude-plugins — Automated Claude Code plugin adoption metrics (n8n workflows)
+- https://composio.dev/content/top-claude-code-plugins — Composio: 10 top Claude Code plugins 2026
+- https://dev.to/raxxostudios/best-claude-code-skills-plugins-2026-guide-4ak4 — DEV Community best skills & plugins guide
+- https://claudemarketplaces.com/ — Claude Code Plugins | Skills, MCP Servers & Marketplace Directory
+- https://uxplanet.org/top-7-claude-code-plugins-2f97c2fbb1be — UX Planet: Top 7 Claude Code Plugins (Nick Babich, Mar 2026)
+- https://github.com/alirezarezvani/claude-skills — 220+ Claude Code skills & agent plugins for 8+ coding agents
+- https://github.com/jeremylongshore/claude-code-plugins-plus-skills — 340 plugins + 1367 agent skills + CCPI package manager
+- https://github.com/anthropics/claude-code/blob/main/plugins/README.md — Official plugins README
+- https://github.com/ComposioHQ/awesome-claude-plugins — Curated list of Claude Code plugins
+
+Key facts:
+- 2,300+ skills and 770+ MCP servers available across community registries
+- Top plugins: Claude-Mem (long-term memory), Superpowers (lifecycle planning), Local-Review (parallel code reviews), Plannotator
+- Popular MCP servers: Figma, Playwright, Vercel, PostgreSQL, GitHub
+
+### Query B: "MCP servers tools agent marketplace 2026"
+
+Sources:
+- https://mcpmarket.com/ — MCP Market directory
+- https://learn.microsoft.com/en-us/agent-framework/agents/tools/local-mcp-tools — Microsoft Learn: Using MCP Tools
+- https://www.builder.io/blog/best-mcp-servers-2026 — Builder.io: The Best MCP Servers for Developers in 2026
+- https://dev.to/jangwook_kim_e31e7291ad98/top-15-mcp-servers-every-developer-should-install-in-2026-n1h — DEV Community: Top 15 MCP Servers
+- https://agentpatch.ai/blog/best-mcp-servers-2026/ — AgentPatch: Best MCP Servers in 2026
+- https://bytebridge.medium.com/mcp-gateways-in-2026-top-10-tools-for-ai-agents-and-workflows-d98f54c3577a — ByteBridge/Medium: MCP Gateways 2026
+- https://composio.dev/content/hosted-mcp-platforms — Composio: 4 best hosted MCP platforms 2026
+- https://www.firecrawl.dev/blog/best-mcp-servers-for-developers — Firecrawl: 10 Best MCP Servers for Developers
+- https://stackgen.com/blog/the-10-best-mcp-servers-for-platform-engineers-in-2026 — StackGen: Best MCP Servers for Platform Engineers
+- https://databar.ai/blog/article/best-mcp-servers-for-sales-teams-in-2026 — Databar: Best MCP Servers for Sales Teams
+
+Key facts:
+- MCP donated to Linux Foundation's AAIF (December 2025), co-founded by Anthropic, Block, OpenAI
+- 97M cumulative SDK downloads (Python + TypeScript)
+- Pinterest deployed MCP in production (April 2026)
+- Amazon AWS implemented MCP for AI agent integration
+- MintMCP: hosted MCP platform for teams
+
+### Query C: "agent skill marketplace plugin ecosystem reusable AI capabilities 2026"
+
+Sources:
+- https://www.kdnuggets.com/top-5-agent-skill-marketplaces-for-building-powerful-ai-agents — KDnuggets: Top 5 Agent Skill Marketplaces
+- https://skillsmp.com/ — Agent Skills Marketplace (425,000+ skills)
+- https://developers.openai.com/codex/skills — OpenAI Codex Agent Skills docs
+- https://chris-ayers.com/posts/agent-skills-plugins-marketplace/ — CodeBytes: Complete Guide to Agent Skills, Plugins, Marketplace
+- https://calmops.com/ai/ai-agent-skills-complete-guide-2026/ — Calmops: AI Agent Skills Complete Guide 2026
+- https://www.paperclipped.de/en/blog/ai-agent-skills-marketplace/ — Paperclipped: AI Agent Skills Marketplace: The New Plugin Ecosystem
+- https://skillsllm.com — SkillsLLM AI Skills Marketplace
+- https://lobehub.com/skills — LobeHub: Agent Skills Marketplace (169,739 skills)
+- https://johnoct.com/blog/2026/02/12/skills-sh-open-agent-skills-ecosystem/ — Skills.sh: The Missing Package Manager for AI Agent Capabilities
+- https://agentskills.io/home — agentskills.io overview (110,000+ skills across 20+ AI tools)
+
+Key facts:
+- December 2025: Anthropic released Agent Skills spec as open standard; OpenAI adopted same format
+- SkillsMP: 425,000+ skills; LobeHub: 169,739 skills; agentskill.sh: 110,000+ skills across 20+ AI tools
+- dbt Labs (Feb 2026) and Supabase (Jan 2026) published official agent skill packages
+
+### Query D: "Claude Code custom workflows slash commands agent tools registry"
+
+Sources:
+- https://github.com/hesreallyhim/awesome-claude-code — Curated: skills, hooks, slash-commands, agent orchestrators
+- https://code.claude.com/docs/en/sub-agents — Official: Create custom subagents
+- https://www.producttalk.org/how-to-use-claude-code-features/ — ProductTalk: Guide to Slash Commands, Agents, Skills, Plug-ins
+- https://platform.claude.com/docs/en/agent-sdk/slash-commands — Slash Commands in the SDK (Claude API Docs)
+- https://dev.to/jangwook_kim_e31e7291ad98/claude-code-advanced-workflow-subagents-commands-multi-session-50hl — DEV: Advanced Workflow: Subagents, Commands & Multi-Session
+- https://alexop.dev/posts/claude-code-customization-guide-claudemd-skills-subagents/ — alexop.dev: CLAUDE.md, Slash Commands, Skills, and Subagents
+- https://claudefa.st/blog/guide/agents/custom-agents — claudefa.st: Build Your Own AI Agents
+- https://blog.sshh.io/p/how-i-use-every-claude-code-feature — Shrivu Shankar: How I Use Every Claude Code Feature
+- https://github.com/wshobson/commands — 57 production-ready slash commands (15 workflows + 42 tools)
+- https://claudefa.st/blog/guide/configuration-basics — claudefa.st: 3 Claude Code Config Files
+
+### Query E: "MCP model context protocol tool registry discovery 2026"
+
+Sources:
+- https://github.com/modelcontextprotocol — Official MCP GitHub organization
+- https://registry.modelcontextprotocol.io/ — Official MCP Registry (launched Sept 2025)
+- https://modelcontextprotocol.io/development/roadmap — MCP Roadmap (last updated March 5, 2026)
+- https://github.com/modelcontextprotocol/registry — Community-driven MCP registry service
+- https://modelcontextprotocol.info/tools/registry/ — MCP Registry info
+- https://modelcontextprotocol.info/blog/mcp-next-version-update/ — Update on Next MCP Protocol Release
+- https://parserdigital.com/2026/01/27/understanding-mcp-the-model-context-protocol-for-secure-extensible-ai-systems/ — Parser Digital: Understanding MCP (Jan 2026)
+- https://blog.modelcontextprotocol.io/posts/2025-09-08-mcp-registry-preview/ — Introducing the MCP Registry (Sept 2025)
+- https://en.wikipedia.org/wiki/Model_Context_Protocol — Wikipedia: Model Context Protocol
+- https://learn.microsoft.com/en-us/windows/ai/mcp/overview — Microsoft Learn: MCP on Windows (Windows ODR)
+
+Key facts:
+- Official MCP Registry: community-owned, backed by Anthropic, GitHub, PulseMCP, Microsoft
+- MCP Server Cards: .well-known URL standard for capability discovery without direct connection
+- Windows ODR (On-device Agent Registry) for discovering agent connectors via MCP
